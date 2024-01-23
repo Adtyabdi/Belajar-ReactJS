@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-root {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0.2rem;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 2rem;
+  background-color: #d2d2d2;
+  color: #333;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.pagination .active a {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dalam file CSS Anda (misalnya, styles.css) atau dalam konfigurasi Tailwind CSS Anda */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Warna latar belakang semi-transparan */
+  z-index: 20; /* Z-index yang lebih tinggi dari tabel */
+}
